@@ -15,3 +15,9 @@ incrementally iterated 21 timesto create separate CSV files for each round of ma
 
 
 Data pre-processing to run experiments.ipynb
+
+The raw data fields have to be processed to get converted into fields that can be used for the experiments. 
+A single base CSV file from 21 separate CSV files is created. 
+This base file contains transformed data fields from all the 210 matches played in 21 rounds. 
+These transformed data fields are, match\_id, ball co-ordinates of team A, ball co-ordinates of team B, names of team A (home teams), 
+names of team B (away teams), zone data for team A, zone data for team B. 
