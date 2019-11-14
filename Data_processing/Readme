@@ -1,0 +1,23 @@
+Data Extraction from raw dataset.ipynb
+
+The experiments are based on the ball possession-position data from the matches. 
+So initially, the ball posses-sion co-ordinates, its corresponding camera frame number, pitch details and  
+playing team names are extracted from the original dataset to build a sub dataset named ball possession-position dataset. 
+This code iterates into multiple folders from the starting directory to fetch data.  
+
+The raw dataset size is approximately 8  Gb and the .DAT Files of each match consist of 176,907 rows of data.
+One Round (10matches) of data is extracted at a single time and stored in a separate CSV file. 
+To extract the data of our interest, a python script leveraging libraries such as Os, Numpy, Pandas is  written.  
+
+When this python script is executed, it creates a new CSV file with  the  required  ball  possession-position data 
+for one round of matches. To build the complete subdataset, this script has to be 
+incrementally iterated 21 timesto create separate CSV files for each round of matches.
+
+
+Data pre-processing to run experiments.ipynb
+
+The raw data fields have to be processed to get converted into fields that can be used for the experiments. 
+A single base CSV file from 21 separate CSV files is created. 
+This base file contains transformed data fields from all the 210 matches played in 21 rounds. 
+These transformed data fields are, match\_id, ball co-ordinates of team A, ball co-ordinates of team B, names of team A (home teams), 
+names of team B (away teams), zone data for team A, zone data for team B. 
