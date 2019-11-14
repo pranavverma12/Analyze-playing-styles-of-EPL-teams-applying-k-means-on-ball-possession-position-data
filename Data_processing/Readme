@@ -2,18 +2,16 @@ Data Extraction from raw dataset.ipynb
 
 The experiments   are   based   on   the   ball   possession-position data from the matches. 
 So initially, the ball posses-sion co-ordinates, its corresponding camera frame number, pitch  details  and  
-playing  team  names  are  extracted  fromthe   original   dataset   to   build   a   sub   dataset   named   ballpossession-position dataset. 
-This code iterates into  multiple  folders  from  the  starting  directory  to  fetchd ata.  
+playing  team  names are extracted from the original dataset to build a sub dataset named ballpossession-position dataset. 
+This code iterates into  multiple  folders  from  the  starting  directory  to  fetch data.  
+
 The  raw  dataset  size  is  approximately  8  Gb  and  the .DAT  Files  of  each  match  consist  of  176,907  rows  of  data.
-Combining   these   rows   with   other   XML   and   CSV’s   filesmultiples  the  numbers  of  iterations.  
-The complex structure of   the   dataset   demands   high   computation   resources   toFig.  1.
-9  zones  and  3  areas  of  a  pitchperform   the   extraction   in   a   single   run.  
-One   Round   (10matches)  of  data  is  extracted  at  a  single  time  and  storedin  a  separate  CSV  file. 
-To  extract  the  data  of  our  interest,a   python   script   leveraging   libraries   such   as   Os,   Numpy,Pandas, and concepts 
-from DOM (Document Object Model)is  written.  When  this  python  script  is  executed,  it  creates a  new  CSV  file  
-with  the  required  ball  possession-positiondata  for  one  round  of  matches.  To  build  the  complete  subdataset, 
-this script has to be incrementally iterated 21 timesto create separate CSV files for each round of matches.
-EachCSV file contains approximately 500 Mb of ball possession-position  data
+One   Round   (10matches)  of  data  is  extracted  at  a  single  time  and  stored in  a  separate  CSV  file. 
+To  extract the data of our interest, a python script leveraging libraries such as Os, Numpy, Pandas is  written.  
+
+When  this  python  script  is  executed,  it  creates a  new  CSV  file  
+with  the  required  ball  possession-positiondata for one round of matches. To build the complete subdataset, this script has to be 
+incrementally iterated 21 timesto create separate CSV files for each round of matches.
 
 
 Data pre-processing to run experiments.ipynb
