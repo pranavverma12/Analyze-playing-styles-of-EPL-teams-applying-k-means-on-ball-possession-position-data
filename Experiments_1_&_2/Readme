@@ -1,0 +1,16 @@
+Code for both Experiment 1 and 2 are provided in Clustering_Experiments_1_&_2.ipynb  
+
+Experiment 1 Outline:
+
+The first subpart of experiment 1 uses data from 3 areas of the pitch (defense, midfield, and attack) to cluster home teams 
+with similar playing styles. The second sub-part of experiment 1 uses the same 3 area data to cluster away teams with a 
+similar playing style. 
+
+
+Experiment 2 Outline:
+
+Deeper analytics to obtain additional insights could not be obtained from the results of Experiment 1.
+Hence, there is a need to conduct another experiment using the 9 zones data which was derived by partitioning the data from 
+3 areas of the pitch. This second experiment is performed using the same k-means clustering technique used in experiment 1. 
+The first sub-part of this experiment uses data from 9 zones of the pitch to cluster home teams with a similar playing style. 
+The second subpart performs the same clustering, using the same 9 zone data but for away teams. 
